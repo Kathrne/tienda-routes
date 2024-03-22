@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0; /* Elimina el padding para que el contenido pueda ocupar todo el espacio */
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  background-image: url('./img/fondo-gris.jpg');
+  background-size: cover;
+}
+
+#header {
+  max-width: 100px; /* Limita el ancho del encabezado según sea necesario */
+  display: flex; /* Utiliza flexbox para manejar el diseño */
+  justify-content: space-between; /* Alinea los elementos al principio y al final del encabezado */
+  align-items: center; /* Alinea verticalmente los elementos */
+  margin: 0 auto;
+  padding: 5px;
+}
+
+
+nav ul{
+  margin-top: 12%;
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+  margin: 5px solid red;
+  font-size: 1.2em;
+  
+}
+
+nav a.is-active{
+  font-weight: bold;
+  pointer-events: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+}
+
+h2{
+  /* Aplicar negrita */
+  font-weight: bold;
+
+  background: linear-gradient(to right, #ffffff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Estilos adicionales */
+  font-size: 3em;
+  margin-bottom: 10px;
+} 
+
+p {
+  color: white;
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  color: white;
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  color: black;
+  font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.features {
+  padding: 150px 20px; /* Ajusta el padding para hacer que el título "Bienvenidos" sea grande */
+  text-align: center; /* Centra el texto horizontalmente */
+  display: flex; /* Usa flexbox para centrar verticalmente el contenido */
+  flex-direction: column; /* Alinea el contenido en una columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.features h1 {
+  font-size: 5em;
+  background: linear-gradient(to right, silver, black);
+  /* background-image: linear-gradient(to right, #050505 0%, #747678 100%); */
+  font-size: 5em; /* Ajusta el tamaño del título "Bienvenidos" */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
+
+.features p {
+  font-size: 1.5em; /* Ajusta el tamaño del subtítulo */
+}
+
+.features p,
+.features a {
+  margin-top: 20px; /* Añade espacio entre el subtítulo y el botón */
+}
+
+
+.busqueda{
+  text-align: center;
+  font-size: 2.5em;
+    font-weight: bold
+}
+
+.celular{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.bien{
+  text-align: center;
+  font-size: 5em;
+}
+
+.bienP{
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 25%;
+}
+
+
+
+.detalles{
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .bien {
+    text-align: center; /* Cambia el tamaño de fuente a 1em cuando la pantalla es más pequeña que 600px */
+    font-size: 2em;
+  }
+  .bienP {
+    text-align: center;
+    font-size: 1em;
+  }
+}
